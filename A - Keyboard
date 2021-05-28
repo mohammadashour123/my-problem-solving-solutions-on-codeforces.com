@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+    char s;
+    cin >> s;
+   string x;
+   cin >> x;
+   for(int i=0; i<x.size(); i++){
+    if(s=='R'){
+        if(x[i]=='w'){cout << 'q';}
+        else if(x[i]=='e'){cout << 'w';}
+        else if(x[i]=='r'){cout << 'e';}
+        else if(x[i]=='t'){cout << 'r';}
+        else if(x[i]=='y'){cout << 't';}
+        else if(x[i]=='u'){cout << 'y';}
+        else if(x[i]=='i'){cout << 'u';}
+        else if(x[i]=='o'){cout << 'i';}
+        else if(x[i]=='p'){cout << 'o';}
+        else if(x[i]=='a'){cout << 'p';}
+        else if(x[i]=='s'){cout << 'a';}
+        else if(x[i]=='d'){cout << 's';}
+        else if(x[i]=='f'){cout << 'd';}
+        else if(x[i]=='g'){cout << 'f';}
+        else if(x[i]=='h'){cout << 'g';}
+        else if(x[i]=='j'){cout << 'h';}
+        else if(x[i]=='k'){cout << 'j';}
+        else if(x[i]=='l'){cout << 'k';}
+        else if(x[i]==';'){cout << 'l';}
+        else if(x[i]=='z'){cout << ';';}
+        else if(x[i]=='x'){cout << 'z';}
+        else if(x[i]=='c'){cout << 'x';}
+        else if(x[i]=='v'){cout << 'c';}
+        else if(x[i]=='b'){cout << 'v';}
+        else if(x[i]=='n'){cout << 'b';}
+        else if(x[i]=='m'){cout << 'n';}
+        else if(x[i]==','){cout << 'm';}
+        else if(x[i]=='.'){cout << ',';}
+        else if(x[i]=='/'){cout << '.';}
+    }
+    if(s=='L'){
+        if(x[i]=='q'){cout << 'w';}
+        else if(x[i]=='w'){cout << 'e';}
+        else if(x[i]=='e'){cout << 'r';}
+        else if(x[i]=='r'){cout << 't';}
+        else if(x[i]=='t'){cout << 'y';}
+        else if(x[i]=='y'){cout << 'u';}
+        else if(x[i]=='u'){cout << 'i';}
+        else if(x[i]=='i'){cout << 'o';}
+        else if(x[i]=='o'){cout << 'p';}
+        else if(x[i]=='p'){cout << 'a';}
+        else if(x[i]=='a'){cout << 's';}
+        else if(x[i]=='s'){cout << 'd';}
+        else if(x[i]=='d'){cout << 'f';}
+        else if(x[i]=='f'){cout << 'g';}
+        else if(x[i]=='g'){cout << 'h';}
+        else if(x[i]=='h'){cout << 'j';}
+        else if(x[i]=='j'){cout << 'k';}
+        else if(x[i]=='k'){cout << 'l';}
+        else if(x[i]=='l'){cout << ';';}
+        else if(x[i]==';'){cout << 'z';}
+        else if(x[i]=='z'){cout << 'x';}
+        else if(x[i]=='x'){cout << 'c';}
+        else if(x[i]=='c'){cout << 'v';}
+        else if(x[i]=='v'){cout << 'b';}
+        else if(x[i]=='b'){cout << 'n';}
+        else if(x[i]=='n'){cout << 'm';}
+        else if(x[i]=='m'){cout << ',';}
+        else if(x[i]==','){cout << '.';}
+        else if(x[i]=='.'){cout << '/';}
+
+    }
+   }
+
+
+    return 0;
+}
