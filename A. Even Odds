@@ -1,0 +1,33 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    long long n , k ;
+    cin >> n >> k ;
+    if (n%2==0) // n is even
+    {
+        if (k>n/2 ) // if position greter than medpoint ==even numbers
+        {
+            cout << (k-(n/2))*2 ; // if k in even numbers
+        }
+        else //if position less than medpoint ==odd numbers
+        {
+            cout << k*2-1; // if k in odd numbers
+        }
+    }
+    else
+    {
+        if(k> n/2+1 ) // n is odd number then odd num > enen num with only one index ;
+        {
+            cout << (k-((n/2)+1))*2; // if k in even numbers
+        }
+        else // if k in odd numbers
+        {
+            cout << k*2-1 ;
+        }
+    }
+
+    return 0;
+}
