@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+   int price , coin , sum=1 ;
+   cin >> price >> coin  ;
+ 
+   while(true)
+   {
+       if ((price*sum)%10 == coin || (price*sum)%10 == 0  )
+       {
+           cout << sum ;
+           break ;
+       }
+        else
+        ++sum ;
+ 
+ 
+ 
+}
+}
