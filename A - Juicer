@@ -1,0 +1,28 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+   int n , b , d  ;
+   cin >> n >> b >>d  ;
+    int  countt=0  , sum = 0 ;
+    for (int i = 0 ;i<n ; i ++ )
+    {
+        int sizee ;
+        cin >>sizee;
+        if (sizee>b)
+            continue ;
+        else
+        {
+            sum+=sizee ;
+            if (sum>d)
+            {
+                ++countt ;
+                sum = 0 ;
+            }
+ 
+        }
+    }
+    cout << countt ;
+}
