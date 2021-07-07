@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+ 
+    const int n = 1378  ;
+    int x ;
+    cin >> x ;
+ 
+    if(x==0){
+        cout << "1" << endl;
+    }
+    else
+    {
+        int nums[] = {8,4,2,6} ;
+        x= (x-1)%4  ;
+        cout << nums[x] ;
+    }
+    return 0;
+}
+ 
