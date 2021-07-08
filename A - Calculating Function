@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long x ;
+    cin >> x ;
+    if (x%2 ==0 ) // if number is even
+    {
+        cout << x/2 ;
+    }
+    else // number is odd
+    {
+        cout << x/2-x; // x is the number that user entered
+    }
+    return 0;
+}
