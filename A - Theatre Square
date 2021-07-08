@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    long long n ,x , a , h , v;
+    cin >> n >> x >> a ;
+    h = n/a ; // divide the rectangular on flagstone
+    v = x/a ;// divide the rectangular on flagstone
+
+    if (n%a!=0) // then have more of flagstone in virtical axis
+    {
+        ++h ; // increment the flagstone
+    }
+    if(x%a!=0) // then have more of flagstone in horzintal  axis
+    {
+        ++v ; // increment the flagstone
+
+    }
+
+    cout << h*v ;
+
+
+
+    return 0;
+}
