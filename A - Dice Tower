@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int n, x,k,c=0,y=0;
+    cin >> n;
+    cin >> x;
+    vector<int>a(n);
+    vector<int>b(n);
+    for(int i=0; i<n; i++){
+        cin >> a[i] >> b[i];
+    }
+    k=7-x;
+
+    for(int j=0; j<n; j++){
+        if((7-a[j]!=k&&7-b[j]!=k)&&(7-a[j]!=x&&7-b[j]!=x)){
+            c++;
+        }else{
+            y++;
+        }
+    }
+    if(c==n){
+        cout << "YES" << endl;
+    }
+    else{
+        cout << "NO";
+    }
+    return 0;
+}
