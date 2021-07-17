@@ -1,0 +1,22 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int left , right , mix ;
+    cin >> left >> right >> mix;
+
+    while(mix > 0 )
+    {
+        if(left<right)
+           ++left ;
+        else
+           ++right ;
+
+        --mix;
+    }
+    cout << min(left,right)*2 ;
+
+    return 0;
+}
