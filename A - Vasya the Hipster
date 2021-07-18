@@ -5,22 +5,9 @@ using namespace std;
 int main()
 {
 
-    int red , blue , c=0 ;
+    int red , blue ;
     cin >> red >> blue ;
-    if(red>blue)
-    {
 
-        cout << blue  <<" "<< (red-blue)/2 ;
-
-    }else if(blue>red){
-
-        cout << red  <<" "<< (blue-red)/2 ;
-
-    }
-    else
-    {
-        cout << red ;
-    }
-
+    cout<< min(red,blue)<<" "<< (max(red,blue)- min(red,blue) )/2;
     return 0;
 }
