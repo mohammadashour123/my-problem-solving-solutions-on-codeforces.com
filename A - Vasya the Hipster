@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int red , blue , c=0 ;
+    cin >> red >> blue ;
+    if(red>blue)
+    {
+
+        cout << blue  <<" "<< (red-blue)/2 ;
+
+    }else if(blue>red){
+
+        cout << red  <<" "<< (blue-red)/2 ;
+
+    }
+    else
+    {
+        cout << red ;
+    }
+
+    return 0;
+}
