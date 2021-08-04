@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+      int n, k;
+      cin >> n >> k;
+      int c = 0;
+
+      for (int i = 0; i < n; i++)
+      {
+        int x = 0;
+        string s;
+        cin >> s;
+        for (int i = 0; i < s.length(); i++)
+        {
+          if (s[i] == '7' || s[i] == '4')
+          {
+            x++;
+          }
+        }
+        if (x <= k)
+        {
+          c++;
+        }
+      }
+      cout << c;
+}
