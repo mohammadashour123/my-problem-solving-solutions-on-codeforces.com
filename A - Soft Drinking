@@ -1,0 +1,20 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int n , k , l , c , d , p, nl , np ;
+    cin >> n >> k >> l >> c >> d >> p>> nl >> np ;
+
+    int x ;
+    x = k*l ;
+    int q ;
+    q=x/nl ;
+    int u ;
+    u = c*d ;
+    int o ;
+    o = p/np ;
+    cout << min (q,min(u , o)  ) / n  ;
+    return 0;
+}
