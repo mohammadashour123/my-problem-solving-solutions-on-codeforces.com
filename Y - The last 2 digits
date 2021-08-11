@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x , t , z ,q, mul;
+    cin >> x >> t >> z >>q;
+    mul = x*t*z*q;
+    cout << mul%100 ;
+    return 0;
+}
